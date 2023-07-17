@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./normalize.scss";
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 18px;
+}
