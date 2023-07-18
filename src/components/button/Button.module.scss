@@ -6,10 +6,17 @@
   cursor: pointer;
   background-color: $CYAN;
   color: white;
+  font-weight: 700;
 }
 
 .btn-header {
   font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.btn-about {
+  font-size: 13px;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
 }
