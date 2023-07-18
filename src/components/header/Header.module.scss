@@ -1,2 +1,32 @@
+@import "../../variables";
+
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+
+  &__boxOne {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__boxTwo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__loginBtn {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 12px;
+    color: $GRAYISH_VIOLENT;
+  }
 }

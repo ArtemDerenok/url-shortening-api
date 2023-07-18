@@ -1,2 +1,19 @@
+@import "../../variables";
+
 .menu {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__listItem {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 12px;
+      color: $GRAYISH_VIOLENT;
+      text-decoration: none;
+    }
+  }
 }

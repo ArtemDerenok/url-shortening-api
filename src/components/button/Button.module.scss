@@ -1,2 +1,15 @@
+@import "../../variables";
+
 .btn {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: $CYAN;
+  color: white;
+}
+
+.btn-header {
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
 }
