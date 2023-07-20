@@ -1,2 +1,21 @@
+@import "../../variables";
+
 .list {
+  &__title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    color: $GRAYISH_VIOLENT;
+    text-decoration: none;
+    font-size: 12px;
+  }
 }

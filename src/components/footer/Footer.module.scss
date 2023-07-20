@@ -1,2 +1,30 @@
+@import "../../variables";
+
 .footer {
+  display: flex;
+  background-color: $VERY_DARK_VIOLENT;
+  color: white;
+  padding: 40px 65px 40px 65px;
+
+  justify-content: space-between;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__boxOne {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__listsBox {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__linksBox {
+    display: flex;
+    gap: 20px;
+  }
 }
