@@ -3,6 +3,7 @@ import Boost from "../boost/Boost";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import ShortBar from "../short-bar/ShortBar";
+import Statistics from "../statistics/Statistics";
 import styles from "./MainPage.module.scss";
 
 const MainPage = () => {
@@ -11,6 +12,7 @@ const MainPage = () => {
       <Header />
       <About />
       <ShortBar />
+      <Statistics />
       <Boost />
       <Footer />
     </div>
