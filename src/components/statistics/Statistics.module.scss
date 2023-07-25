@@ -5,6 +5,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 70px;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  position: relative;
+
+  &__formContainer {
+    position: absolute;
+    top: -80px;
+  }
 
   &__title {
     font-weight: 700;
@@ -14,8 +23,10 @@
 
   &__text {
     color: $GRAYISH_VIOLENT;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 22px;
+    text-align: center;
   }
 
   &__boxOne {
@@ -24,7 +35,27 @@
     align-items: center;
   }
 
+  &__line {
+    width: 20px;
+    height: 5px;
+    background-color: $CYAN;
+    align-self: center;
+  }
+
   &__boxTwo {
-    border: 1px solid black;
+    display: flex;
+    height: 290px;
+  }
+
+  &__cardOne {
+    align-self: start;
+  }
+
+  &__cardTwo {
+    align-self: center;
+  }
+
+  &__cardThree {
+    align-self: flex-end;
   }
 }

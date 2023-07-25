@@ -2,16 +2,20 @@ import Card from "../card/Card";
 import brandIcon from "../../assets/images/icon-brand-recognition.svg";
 import detailedIcon from "../../assets/images/icon-detailed-records.svg";
 import fullyIcon from "../../assets/images/icon-fully-customizable.svg";
+import ShortBar from "../short-bar/ShortBar";
 import styles from "./Statistics.module.scss";
 
 const Statistics = () => {
   return (
     <section className={styles.statistic}>
+      <div className={styles.statistic__formContainer}>
+        <ShortBar />
+      </div>
       <div className={styles.statistic__boxOne}>
         <h2 className={styles.statistic__title}>Advanced Statistics</h2>
         <p className={styles.statistic__text}>
-          Track how your links are performing across the web with our advanced
-          statistics dashboard
+          Track how your links are performing across the web with
+          <br /> our advanced statistics dashboard
         </p>
       </div>
       <div className={styles.statistic__boxTwo}>
@@ -22,6 +26,7 @@ const Statistics = () => {
             icon={brandIcon}
           />
         </div>
+        <div className={styles.statistic__line}></div>
         <div className={styles.statistic__cardTwo}>
           <Card
             title="Detailed Records"
@@ -29,6 +34,7 @@ const Statistics = () => {
             icon={detailedIcon}
           />
         </div>
+        <div className={styles.statistic__line}></div>
         <div className={styles.statistic__cardThree}>
           <Card
             title="Fully Customizable"

@@ -1,2 +1,40 @@
+@import "../../variables";
+
 .card {
+  background-color: white;
+  width: 300px;
+  height: 200px;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  border-radius: 10px;
+
+  &__iconBox {
+    background-color: $DARK_VIOLENT;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+  }
+
+  &__icon {
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: $GRAYISH_VIOLENT;
+    line-height: 20px;
+  }
 }
