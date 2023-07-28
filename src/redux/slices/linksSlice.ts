@@ -9,7 +9,7 @@ interface ILinksSlice {
 }
 
 const initialState: ILinksSlice = {
-  links: []
+  links: [],
 }
 
 export const getLink = createAsyncThunk(

@@ -17,7 +17,14 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__inputBox {
+    display: flex;
     gap: 20px;
+    align-items: center;
   }
 
   &__input {
@@ -41,4 +48,16 @@
     margin: 0 auto;
     border-radius: 15px;
   }
+}
+
+.error {
+  font-size: 13px;
+  font-weight: 700;
+  color: red;
+  align-self: flex-start;
+}
+
+.errorInput {
+  color: red;
+  border: 1px solid red;
 }
