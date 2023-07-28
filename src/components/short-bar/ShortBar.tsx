@@ -26,7 +26,17 @@ const ShortBar = () => {
   } = useForm<IFormInput>({ resolver: yupResolver(schema) });
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    dispatch(getLink(data.link));
+    dispatch(getLink(data.link)).then((state) => {
+      const dataJson = localStorage.getItem("links");
+
+      if (dataJson !== null) {
+        const arr = JSON.parse(dataJson);
+        arr.push(state.payload);
+        localStorage.setItem("links", JSON.stringify(arr));
+      } else {
+        localStorage.setItem("links", JSON.stringify([state.payload]));
+      }
+    });
   };
 
   return (

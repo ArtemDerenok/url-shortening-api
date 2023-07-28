@@ -8,8 +8,16 @@ interface ILinksSlice {
   links: string[];
 }
 
+const initState = () => {
+  const data = localStorage.getItem('links');
+  if (data !== null) {
+    return JSON.parse(data);
+  }
+  return [];
+}
+
 const initialState: ILinksSlice = {
-  links: [],
+  links: initState(),
 }
 
 export const getLink = createAsyncThunk(
