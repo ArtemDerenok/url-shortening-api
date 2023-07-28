@@ -31,9 +31,7 @@ export const getLink = createAsyncThunk(
 export const linksSlice = createSlice({
   name: 'links',
   initialState,
-  reducers: {
-
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getLink.fulfilled, (state, action: PayloadAction<string[]>) => {
       state.links.push(action.payload);

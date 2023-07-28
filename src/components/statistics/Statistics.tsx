@@ -5,6 +5,7 @@ import fullyIcon from "../../assets/images/icon-fully-customizable.svg";
 import ShortBar from "../short-bar/ShortBar";
 import { useAppSelector } from "../../redux/hooks";
 import styles from "./Statistics.module.scss";
+import ShortLink from "../short-link/ShortLink";
 
 const Statistics = () => {
   const links = useAppSelector((state) => state.links.links);
@@ -17,7 +18,7 @@ const Statistics = () => {
       <div className={styles.statistic__boxOne}>
         <div>
           {links.map((elem, index) => (
-            <p key={index}>{elem}</p>
+            <ShortLink fullLink={elem[1]} shortLink={elem[0]} key={index} />
           ))}
         </div>
         <h2 className={styles.statistic__title}>Advanced Statistics</h2>
