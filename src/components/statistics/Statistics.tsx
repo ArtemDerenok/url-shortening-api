@@ -3,15 +3,23 @@ import brandIcon from "../../assets/images/icon-brand-recognition.svg";
 import detailedIcon from "../../assets/images/icon-detailed-records.svg";
 import fullyIcon from "../../assets/images/icon-fully-customizable.svg";
 import ShortBar from "../short-bar/ShortBar";
+import { useAppSelector } from "../../redux/hooks";
 import styles from "./Statistics.module.scss";
 
 const Statistics = () => {
+  const links = useAppSelector((state) => state.links.links);
+
   return (
     <section className={styles.statistic}>
       <div className={styles.statistic__formContainer}>
         <ShortBar />
       </div>
       <div className={styles.statistic__boxOne}>
+        <div>
+          {links.map((elem, index) => (
+            <p key={index}>{elem}</p>
+          ))}
+        </div>
         <h2 className={styles.statistic__title}>Advanced Statistics</h2>
         <p className={styles.statistic__text}>
           Track how your links are performing across the web with

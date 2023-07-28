@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 interface ILinksSlice {
-  links: string[];
+  links: [string[]];
 }
 
 const initState = () => {
@@ -24,7 +24,7 @@ export const getLink = createAsyncThunk(
   'links/getLink',
   async (link: string) => {
     const response = await axios.get(`https://api.shrtco.de/v2/shorten?url=${link}`)
-    return response.data.result.full_short_link
+    return [response.data.result.full_short_link, response.data.result.original_link]
   }
 )
 
@@ -35,7 +35,7 @@ export const linksSlice = createSlice({
 
   },
   extraReducers: (builder) => {
-    builder.addCase(getLink.fulfilled, (state, action: PayloadAction<string>) => {
+    builder.addCase(getLink.fulfilled, (state, action: PayloadAction<string[]>) => {
       state.links.push(action.payload);
     });
   }
