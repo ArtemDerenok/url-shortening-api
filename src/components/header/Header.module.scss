@@ -30,5 +30,9 @@
     cursor: pointer;
     font-size: 12px;
     color: $GRAYISH_VIOLENT;
+
+    &:hover {
+      color: black;
+    }
   }
 }

@@ -17,5 +17,9 @@
     color: $GRAYISH_VIOLENT;
     text-decoration: none;
     font-size: 12px;
+
+    &:hover {
+      color: $CYAN;
+    }
   }
 }
