@@ -32,9 +32,14 @@
 @media (max-width: 966px) {
   .about {
     flex-direction: column;
+    gap: 40px;
 
     &__boxTwo {
       order: -1;
+    }
+
+    &__img {
+      max-width: 500px;
     }
   }
 }

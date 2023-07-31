@@ -65,3 +65,21 @@
   border-radius: 7px;
   background-color: $DARK_VIOLENT;
 }
+
+@media (max-width: 914px) {
+  .btn-copy {
+    padding: 0;
+    width: 96%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .btn-copied {
+    padding: 0;
+    width: 96%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}

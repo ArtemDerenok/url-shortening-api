@@ -1,6 +1,6 @@
 import Button from "../button/Button";
 import bgImg from "../../assets/images/bg-shorten-desktop.svg";
-import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { useAppDispatch } from "../../redux/hooks";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { getLink } from "../../redux/slices/linksSlice";
 import { yupResolver } from "@hookform/resolvers/yup";

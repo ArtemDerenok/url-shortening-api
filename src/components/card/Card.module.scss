@@ -38,3 +38,11 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: 966px) {
+  .card {
+    &__iconBox {
+      left: 39%;
+    }
+  }
+}
