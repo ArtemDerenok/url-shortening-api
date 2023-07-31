@@ -66,3 +66,17 @@
     align-self: flex-end;
   }
 }
+
+@media (max-width: 966px) {
+  .statistic {
+    &__boxTwo {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &__line {
+      height: 50px;
+      width: 5px;
+    }
+  }
+}

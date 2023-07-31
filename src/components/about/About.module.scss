@@ -28,3 +28,13 @@
   &__img {
   }
 }
+
+@media (max-width: 966px) {
+  .about {
+    flex-direction: column;
+
+    &__boxTwo {
+      order: -1;
+    }
+  }
+}

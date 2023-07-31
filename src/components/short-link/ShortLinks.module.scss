@@ -24,3 +24,13 @@
     color: $CYAN;
   }
 }
+
+@media (max-width: 1138px) {
+  .shortLink {
+    max-width: 900px;
+
+    &__boxOne {
+      width: 700px;
+    }
+  }
+}
