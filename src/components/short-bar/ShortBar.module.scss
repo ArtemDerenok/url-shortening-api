@@ -70,3 +70,19 @@
     }
   }
 }
+
+@media (max-width: 714px) {
+  .bar {
+    width: 300px;
+    height: 200px;
+
+    &__inputBox {
+      flex-direction: column;
+      width: 95%;
+    }
+
+    &__input {
+      width: 100%;
+    }
+  }
+}

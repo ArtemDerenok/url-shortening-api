@@ -83,3 +83,13 @@
     text-align: center;
   }
 }
+
+@media (max-width: 714px) {
+  .btn-short {
+    padding: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
