@@ -32,3 +32,20 @@
   padding: 14px 25px 14px 25px;
   border-radius: 7px;
 }
+
+.btn-copy {
+  font-size: 13px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 7px;
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+.btn-copied {
+  font-size: 13px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 7px;
+  background-color: $DARK_VIOLENT;
+}

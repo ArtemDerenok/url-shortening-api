@@ -1,9 +1,26 @@
 @import "../../variables";
 
 .shortLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-size: 15px;
+  width: 1110px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 10px;
+
+  &__boxOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 950px;
+  }
+
   &__fullLink {
   }
 
   &__shortLink {
+    color: $CYAN;
   }
 }

@@ -4,11 +4,20 @@ import detailedIcon from "../../assets/images/icon-detailed-records.svg";
 import fullyIcon from "../../assets/images/icon-fully-customizable.svg";
 import ShortBar from "../short-bar/ShortBar";
 import { useAppSelector } from "../../redux/hooks";
-import styles from "./Statistics.module.scss";
 import ShortLink from "../short-link/ShortLink";
+import { useState } from "react";
+import styles from "./Statistics.module.scss";
 
 const Statistics = () => {
   const links = useAppSelector((state) => state.links.links);
+  const [buffer, setBuffer] = useState("");
+
+  const handleBuffer = (value: string) => {
+    navigator.clipboard
+      .writeText(value)
+      .then(() => setBuffer(value))
+      .catch((error) => console.log(error));
+  };
 
   return (
     <section className={styles.statistic}>
@@ -16,9 +25,15 @@ const Statistics = () => {
         <ShortBar />
       </div>
       <div className={styles.statistic__boxOne}>
-        <div>
+        <div className={styles.statistic__shortLinksBox}>
           {links.map((elem, index) => (
-            <ShortLink fullLink={elem[1]} shortLink={elem[0]} key={index} />
+            <ShortLink
+              fullLink={elem[1]}
+              shortLink={elem[0]}
+              buffer={buffer}
+              handleBuffer={handleBuffer}
+              key={index}
+            />
           ))}
         </div>
         <h2 className={styles.statistic__title}>Advanced Statistics</h2>
