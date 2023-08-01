@@ -31,3 +31,11 @@
     z-index: 0;
   }
 }
+
+@media (max-width: 680px) {
+  .boost {
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
