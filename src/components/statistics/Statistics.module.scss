@@ -80,3 +80,15 @@
     }
   }
 }
+
+@media (max-width: 680px) {
+  .statistic {
+    &__title {
+      font-size: 25px;
+    }
+
+    &__text {
+      padding: 0px 20px 0px 20px;
+    }
+  }
+}

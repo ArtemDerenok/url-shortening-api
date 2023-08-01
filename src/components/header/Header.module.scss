@@ -36,3 +36,12 @@
     }
   }
 }
+
+@media (max-width: 680px) {
+  .header {
+    padding-left: 20px;
+    &__boxTwo {
+      display: none;
+    }
+  }
+}
