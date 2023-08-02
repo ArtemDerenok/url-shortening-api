@@ -7,6 +7,10 @@
   background-color: $CYAN;
   color: white;
   font-weight: 700;
+
+  a {
+    all: unset;
+  }
 }
 
 .btn-header {

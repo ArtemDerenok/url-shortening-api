@@ -7,7 +7,12 @@ const Boost = () => {
     <section className={styles.boost}>
       <div className={styles.boost__container}>
         <h2 className={styles.boost__title}>Boost your links today</h2>
-        <Button text="Get Started" callback={() => {}} className="btn-boost" />
+        <Button
+          text="Get Started"
+          callback={() => {}}
+          className="btn-boost"
+          link="#form"
+        />
       </div>
       <img className={styles.boost__img} src={bgImg} alt="background" />
     </section>

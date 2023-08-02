@@ -13,7 +13,12 @@ const About = () => {
           Build your brand's recognition and get detailed <br /> insights on how
           your links are performing.
         </p>
-        <Button text="Get Started" callback={() => {}} className="btn-about" />
+        <Button
+          text="Get Started"
+          callback={() => {}}
+          className="btn-about"
+          link="#form"
+        />
       </div>
       <div className={styles.about__boxTwo}>
         <img src={image} alt="working" className={styles.about__img} />

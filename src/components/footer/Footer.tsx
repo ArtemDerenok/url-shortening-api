@@ -9,22 +9,22 @@ import Link from "../link/Link";
 const links = [
   {
     img: facebookImg,
-    src: "#",
+    src: "https://ru-ru.facebook.com/",
     alt: "facebook",
   },
   {
     img: twitterImg,
-    src: "#",
+    src: "https://twitter.com/?lang=ru",
     alt: "twitter",
   },
   {
     img: pinterImg,
-    src: "#",
+    src: "https://ru.pinterest.com/",
     alt: "pinterest",
   },
   {
     img: instImg,
-    src: "#",
+    src: "https://www.instagram.com/",
     alt: "instagram",
   },
 ];

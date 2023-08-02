@@ -41,7 +41,11 @@ const ShortBar = () => {
 
   return (
     <section className={styles.bar}>
-      <form className={styles.bar__form} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        id="form"
+        className={styles.bar__form}
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className={styles.bar__inputBox}>
           <input
             {...register("link")}

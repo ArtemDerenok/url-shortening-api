@@ -5,16 +5,17 @@ interface IButton {
   callback: () => void;
   className: string;
   disabled?: boolean;
+  link?: string;
 }
 
-const Button = ({ text, callback, className, disabled }: IButton) => {
+const Button = ({ text, callback, className, disabled, link }: IButton) => {
   return (
     <button
       className={`${styles.btn} ${styles[className]} `}
       onClick={callback}
       disabled={disabled}
     >
-      {text}
+      <a href={link ? link : "#"}>{text}</a>
     </button>
   );
 };
