@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ArtemDerenok/url-shortening-api)
-- Live Site URL: [Add live site URL here](https://transcendent-lily-e0158f.netlify.app/)
+- Solution URL: [GitHub](https://github.com/ArtemDerenok/url-shortening-api)
+- Live Site URL: [Deploy](https://transcendent-lily-e0158f.netlify.app/)
 
 ## My process
 
